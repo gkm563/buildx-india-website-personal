@@ -4,24 +4,49 @@ import { Trophy, Award, Medal } from 'lucide-react';
 const prizes = [
   {
     rank: 'Winner',
-    amount: 'Exciting Cash Prize',
-    perks: ['Winner Certificate', 'Special Recognition', 'Direct Entry to Finals'],
+    amount: '₹5,000 Cash',
+    perks: [
+      'Certificate of Achievement',
+      'Internship Opportunities (Top Performers)',
+      'Swag Kits & Goodies (if applicable)',
+      'Feature on Official Social Media Pages',
+      'Networking Opportunities with Industry Experts',
+      'Other special sponsor rewards'
+    ],
     icon: Trophy,
     color: 'from-orange-500 to-amber-500' // vibrant orange
   },
   {
-    rank: 'Runner Up',
-    amount: 'Cash Prize + Perks',
-    perks: ['Runner Up Certificate', 'Networking Opportunity', 'Tech Swags'],
+    rank: 'Runner-up',
+    amount: '₹2,000 Cash',
+    perks: [
+      'Certificate of Achievement',
+      'Internship Opportunities (Top Performers)',
+      'Swag Kits & Goodies (if applicable)',
+      'Feature on Official Social Media Pages',
+      'Networking Opportunities with Industry Experts'
+    ],
     icon: Award,
     color: 'from-cyan-500 to-blue-500' // cyan/blue
   },
   {
-    rank: '2nd Runner Up',
-    amount: 'Cash Prize + Perks',
-    perks: ['Certificate of Merit', 'Community Access', 'Mentorship'],
-    icon: Medal,
+    rank: 'Top 20',
+    amount: 'Special Rewards',
+    perks: [
+      'Certificate of Achievement',
+      'Some special rewards'
+    ],
+    icon: Trophy,
     color: 'from-pink-500 to-rose-500' // pink/rose
+  },
+  {
+    rank: 'Participation',
+    amount: 'Certificate',
+    perks: [
+      'Participation Certificate'
+    ],
+    icon: Award,
+    color: 'from-emerald-500 to-teal-500' // emerald/teal
   }
 ];
 
@@ -34,7 +59,7 @@ export default function Prizes() {
           <p className="text-slate-300 font-medium">Rewarding the most innovative minds in the country.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {prizes.map((prize, idx) => (
             <motion.div
               key={prize.rank}
@@ -77,9 +102,12 @@ export default function Prizes() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block bg-slate-800/40 backdrop-blur-md px-8 py-4 rounded-full border border-white/10 shadow-lg relative z-10 hover:border-white/20 transition-all">
+          <div className="inline-block bg-slate-800/40 backdrop-blur-md px-8 py-4 rounded-3xl border border-white/10 shadow-lg relative z-10 hover:border-white/20 transition-all text-left">
+            <p className="text-sm text-slate-300 font-medium mb-2">
+              <span className="text-primary font-bold text-base mr-1">Note:</span> The prize will be awarded to the winning team based on final evaluation by the judging panel. All decisions by the judges will be final and binding.
+            </p>
             <p className="text-sm text-slate-300 font-medium">
-              <span className="text-primary font-bold text-base mr-1">Note:</span> All participants who submit valid projects will receive a participation certificate.
+              * All the prizes and certificates will be released within a few days after the announcement of results.
             </p>
           </div>
         </div>
