@@ -12,7 +12,6 @@ import xyzLogo from '@/src/assets/images/xyz.jpg';
 import n8nLogo from '@/src/assets/images/n8n.webp';
 import certifyixLogo from '@/src/assets/images/certifix.webp';
 import fuelerLogo from '@/src/assets/images/fueler.png';
-import ThoreProblemStatement from '@/src/components/ThoreProblemStatement';
 
 const faqs = [
   { q: 'Who can participate?', a: 'The hackathon is open to students, developers, and tech enthusiasts across India.' },
@@ -333,8 +332,6 @@ export default function EventDetails() {
           </div>
         </div>
 
-        {/* Thore Network Problem Statement */}
-        <ThoreProblemStatement />
 
         {/* Final CTA / Registration Section */}
         <motion.div 

@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import EventDetails from './pages/EventDetails';
 import Team from './pages/Team';
 import Sponsors from './pages/Sponsors';
-import Timeline from './pages/Timeline';
+import ProblemStatements from './pages/ProblemStatements';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,7 +36,7 @@ export default function App() {
               <Route path="/details" element={<EventDetails />} />
               <Route path="/team" element={<Team />} />
               <Route path="/sponsors" element={<Sponsors />} />
-              <Route path="/timeline" element={<Timeline />} />
+              <Route path="/problems" element={<ProblemStatements />} />
             </Routes>
           </AnimatePresence>
         </main>

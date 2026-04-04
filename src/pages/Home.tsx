@@ -11,6 +11,7 @@ import ProjectSubmission from '../components/ProjectSubmission';
 import { ArrowRight, Users, Calendar, Globe, Trophy, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import insightsLogo from '@/src/assets/images/insights.jpeg';
+import { Mountain, GraduationCap } from 'lucide-react';
 import binternzLogo from '@/src/assets/images/binternz.jpeg';
 import unstopLogo from '@/src/assets/images/unstop.jpeg';
 import interviewBuddyLogo from '@/src/assets/images/INTERVIEW BUDDY.jpeg';
@@ -100,6 +101,35 @@ export default function Home() {
           <SponsorHighlight />
         </div>
       </section>
+
+      <motion.section 
+        className="py-12 px-6"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="max-w-7xl mx-auto glass p-8 md:p-12 rounded-[2.5rem] border-amber-500/20 bg-amber-500/5 relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 blur-[80px] rounded-full pointer-events-none" />
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-500 text-[10px] font-bold uppercase tracking-wider mb-4 border border-amber-500/20">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                Special Category Added
+              </div>
+              <h2 className="text-2xl md:text-4xl font-display font-bold mb-4">Offroad Semantic <span className="text-amber-500 underline decoration-amber-500/30 underline-offset-8">Segmentation</span></h2>
+              <p className="text-slate-400 max-w-xl">
+                Train AI models for desert autonomy in our latest special category challenge. Win separate cash prizes and rewards!
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+              <Link to="/details" className="btn-primary flex items-center justify-center gap-2 whitespace-nowrap">
+                Join Challenge
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </motion.section>
 
       <ThemeCards />
       <Timeline />

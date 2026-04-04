@@ -9,8 +9,8 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Event Details', path: '/details' },
   { name: 'Team', path: '/team' },
+  { name: 'Problem Statements', path: '/problems' },
   { name: 'Sponsors', path: '/sponsors' },
-  { name: 'Timeline', path: '/timeline' },
 ];
 
 export default function Navbar() {
