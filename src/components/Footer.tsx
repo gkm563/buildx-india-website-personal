@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-          <p>© 2026 BuildX India. All rights reserved. Organized by UDTech India.</p>
+          <p>© 2026 BuildX India. All rights reserved. Organized by UDTech India. | Developed by <a href="https://www.linkedin.com/in/gkm563" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-white transition-colors font-medium">GKM</a></p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
